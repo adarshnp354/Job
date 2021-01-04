@@ -1,0 +1,99 @@
+<p>admin-addjob works!</p>
+
+<form action="/admin/add" method="POST"> 
+
+    <div>
+        <input type="text"  [(ngModel)]="addJobDetails.jobid" name="jobid" id="jobid">
+        <label>Job id</label>
+   </div>
+
+   <div>
+        <input type="text" [(ngModel)]="addJobDetails.title" name="title" id="title">
+        <label>Job Title</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.posteddate" name="posteddate" id="posteddate">
+        <label>Job Posted Date</label>
+   </div>
+
+   <div>
+        <input type="text" [(ngModel)]="addJobDetails.role" name="role" id="role">
+        <label>Role</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.responsibility" name="responsibility" id="responsibility">
+        <label>Responsibility</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.companyname" name="companyname" id="companyname">
+        <label>Company Name</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.experience" name="experience" id="experience">
+        <label>Experience</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.salary" name="salary" id="salary">
+        <label>Salary Range</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.noofposition" name="noofposition" id="noofposition">
+        <label>No.of Positions</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.location" name="location" id="location">
+        <label>Location</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.skills" name="skills" id="skills">
+        <label>Skills</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.qualification" name="qualification" id="qualification">
+        <label>Qualification</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.degree" name="degree" id="degree">
+        <label>Degree</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.companyinfo" name="companyinfo" id="companyinfo">
+        <label>Company Info</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.employmenttype" name="employmenttype" id="employmenttype">
+        <label>Employment Type</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.industrytype" name="industrytype" id="industrytype">
+        <label>Industry Type</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.keyword" name="keyword" id="keyword">
+        <label>Search Keyword</label>
+    </div>
+
+    <div>
+        <input type="text" [(ngModel)]="addJobDetails.jobdescription" name="jobdescription" id="jobdescription">
+        <label>Job Description</label>
+    </div>
+    
+    <div>
+        <input type="button" value="Post" (click)="post()">
+    </div>
+
+</form>
